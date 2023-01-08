@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color:powderblue;">
+     <div class="container">
+    
+    <div class="row">
+      
+      <div class="col-md-12 jumbotron text-center">
+        <div class="p-6 text-center bg-image rounded-3" style="background-image: url('background.jpg');">
+        <h1 style="color:rgb(0, 38, 255)">Belly Button Biodiversity Dashboard</h1>
+        <p style="color:rgba(236, 236, 245, 0.993); font-size:160%;">Use the interactive charts below to explore the dataset <br>Data is to identify bacteria which can be help to Improbable Beef<br> 
+          Three different visualizations are presented to analyze types of bacteria that colonize their bellies<br> Some of them will be suitable for synthetic beef production.</p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+        <h4 style="text-align:center;">Bar chart provide # of sampels Vs. Bacterial information</h4>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+        <h4 style="text-align:center;">Gauge chart provide Belly Button washing Frequency by Volunteers</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        
+        <div id="bubble"></div>
+        <h4 style="text-align:center;">Bubble chart Provide Bacterial ID info Vs. Values</h4>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
