@@ -160,6 +160,7 @@ function buildCharts(sample) {
 
     var layout = {
       title:"Bacteria Cultures Per Sample",
+      xaxis : { title: "OTU ID" },
       // shwlegent: false,
       height: 450,
       width: 1150
